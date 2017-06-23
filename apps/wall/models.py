@@ -1,6 +1,8 @@
 from __future__ import unicode_literals
 
 from django.db import models
+
+# importing from login app of this project
 from ..login.models import User
 from django.db.models import Count
 

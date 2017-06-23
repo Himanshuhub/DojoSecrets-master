@@ -1,5 +1,7 @@
 from django.shortcuts import render, redirect
+# import from models the Class name (table name)
 from .models import Secret
+# import for flash
 from django.contrib import messages
 from ..login.models import User
 from django.db.models import Count
