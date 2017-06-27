@@ -62,42 +62,6 @@ class UserManager(models.Manager):
             print "*"*50
             return (True, user)
 
-        # errors2 = []
-        # user = User.objects.get(email = postData['email'])
-        #
-        # if 'email' in postData and 'password' in postData:
-        #     if not len(postData['email']):
-        #         errors2.append("Email must not be blank")
-        #     # if len(postData['password']) < 8:
-        #     #     errors2.append("Incorrect password")
-        #     if not user:
-        #         errors2.append("Email not in system")
-        #     # else:
-        #     #     try:
-        #     #         user = User.objects.get(email = postData['email'])
-        #     #     except User.DoesNotExist:
-        #     #         errors2.append("Invalid credentials")
-        #
-        #     # pw_match = bcrypt.hashpw(postData['password'].encode(), user.password.encode())
-        #     if bcrypt.hashpw(postData['password'].encode(), user.password.encode()) != user.password or len(postData['password']) < 8:
-        #         errors2.append("Incorrect password")
-        #     if len(errors2) > 0:
-        #         print "You have errors. Boo!"
-        #         print "*"*50
-        #         return (False, errors2)
-        #     else:
-        #         print "You have 0 errors. Hooray!"
-        #         print "*"*50
-        #         return (True, user)
-        #
-        #     # if pw_match == user.password:
-        #     #     return (True, user)
-        #     # else:
-        #     #     errors2.append("Incorrect password")
-        #     #     # print "You have errors. Boo!"
-        #     #     # return (False, errors2)
-
-
 
 # **********************************************
 class User(models.Model):
